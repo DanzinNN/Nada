@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,7 @@
         </div>
     </div>
 </body>
-</html> -->
+</html>
 
 
 
@@ -116,13 +116,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #006400;
     padding: 16px;
 }
 
 .form-img img{
-    width: 450px;
-    height: 450px;
+    width: 550px;
+    height: 550px;
 
 }
 
@@ -157,3 +156,35 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.login-button button:hover{
+    background-color: #087408;
+
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.input-box input{
+    margin: 10px 0;
+    padding: 13px 19px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #d3d3d3;
+}
+
+.input-box input:focus-visible{
+    outline: 2px solid #5b7cc2;
+}
+
