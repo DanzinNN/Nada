@@ -12,7 +12,7 @@
             <img src="assets/img/logo.jpg" alt="Imagem do Formulário.">
         </div>
         <div class="form">
-            <form action="">
+            <form action="#">
                 <div class="form-header">
                     <div class="tittle">
                         <h1>Cadastre-se</h1>
@@ -44,7 +44,7 @@
                         <input id="password" type="password" name="password" placeholder="Digite sua senha">
                     </div>
                     <div class="input-box">
-                        <label for="confirmpassword">Senha</label>
+                        <label for="confirmpassword">Confirmar senha</label>
                         <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Confirme sua senha">
                     </div>
                 </div>
@@ -116,6 +116,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #006400;
     padding: 16px;
 }
 
@@ -186,5 +187,93 @@ body{
 
 .input-box input:focus-visible{
     outline: 2px solid #5b7cc2;
+}
+
+.input-box input:hover{
+    background-color: #f5f5f5;
+}
+
+.input-box input::placeholder{
+    color: #dcdcdc;
+}
+
+.input-box label, gender-title h6{
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.gender-group{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+.gender-input input{
+    margin-right: 6px;
+}
+
+.gender-input label{
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.register-button button{
+    width: 35vw;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #006400;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button button:hover{
+    background-color: #087408;
+}
+
+@media screen and (max-width: 1080px){
+    .form-img {
+        display: none;
+    }
+    .container{
+        width: 50vw;
+    }
+    .form {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .container{
+        width: 90vw;
+        height: auto;
+    }
+    .input-group{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        max-height: 160px;
+        padding-right: 80px;
+    }
+    .gender-inputs{
+        margin-top: 30px;
+    }
+    .gender-group{
+        flex-direction: column;
+    }
+    .gender-input{
+        margin-top: 8px;
+    }
 }
 
